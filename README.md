@@ -15,7 +15,8 @@ first you need to run the executable and make sure it doesn't crash (if it does 
 If that works then you are now in the viewport and your mouse will be locked. What you need to do from there is simple. Click the = key on your keyboard to lock/unlock your mouse.
 When it is locked you can look around with the mouse and move with WASD.
 Now you are in the engine hooray! If the window panels in the engine are really small you can snap/resize them to your liking.
-To load the demo file click File and then Open Project and type texture_tester exactly. It might crash if you type it wrong.
+To load the demo file you need to go into the Highlander file and unzip the tar.gz. then, click File and then Open Project and type texture_tester exactly. It might crash if you type it wrong
+or if it is still compressed when you try to load it. On second thought, keeping it compressed and being able to load it would be cool! I'll add that soon (hopefully)!
 
 Now that you have a file loaded you can modify it how you want! To change global lighting settings for the engine click the lighting dropdown menu and
 some global lighting setting will appear such as ambient light!
