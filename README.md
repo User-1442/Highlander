@@ -8,7 +8,7 @@ sudo apt install libassimp5
 
 If that doesn't work, idk do something it's in alpha it's probably going to break
 
-# How To Use
+## How To Use
 This only currently applies to Alpha 1.2 because the UI is slightly different (not really)
 
 first you need to run the executable and make sure it doesn't crash (if it does it's probably a missing library).
