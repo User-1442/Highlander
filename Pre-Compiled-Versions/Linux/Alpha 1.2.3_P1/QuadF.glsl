@@ -16,9 +16,9 @@ layout (location = 2) out vec3 reflectionmask;
 uniform mat4 projection; // osdkfjaoijdsofijasoiejfoisdjoifjaosiedjfoiajsdiofjo
 uniform mat4 invProjection;
 
-/*float hash(vec2 p) {
+float hash(vec2 p) {
     return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453);
-}*/
+}
 
 void main() {
     float roughness = 0.0;
@@ -46,7 +46,7 @@ void main() {
 
     vec3 I = normalize(viewPos.xyz);
 
-    vec3 R = normalize(reflect(I, N));//, vec3(hash(TexCoords + 0.1) * 2.0 - 1.0, hash(TexCoords + 0.2) * 2.0 - 1.0, hash(TexCoords + 0.3) * 2.0 - 1.0), 0.0f)); //ALSO WHEN REPAIRING IT PUT THE MIX BY ROUGHNESS BACK
+    vec3 R = normalize(mix(reflect(I, N), vec3(hash(TexCoords + 0.1) * 2.0 - 1.0, hash(TexCoords + 0.2) * 2.0 - 1.0, hash(TexCoords + 0.3) * 2.0 - 1.0), 0.05f));//, vec3(hash(TexCoords + 0.1) * 2.0 - 1.0, hash(TexCoords + 0.2) * 2.0 - 1.0, hash(TexCoords + 0.3) * 2.0 - 1.0), 0.0f)); //ALSO WHEN REPAIRING IT PUT THE MIX BY ROUGHNESS BACK
 
 
     vec3 singlestep = R * stepSize;
@@ -65,7 +65,7 @@ void main() {
 
     vec4 M_VP = vec4(0.0f);
 
-    vec4 stepvec = projection * vec4(viewPos.xyz + (R * 10), 1.0);
+    vec4 stepvec = projection * vec4(viewPos.xyz + (R * 100), 1.0);
     stepvec = vec4(stepvec.x / stepvec.w, stepvec.y / stepvec.w, stepvec.z / stepvec.w, 1.0);
 
     float newdepth = 0.0f;
@@ -105,7 +105,7 @@ void main() {
                 vec3 newN = texture(gNormal, search.xy).rgb;
                 newN = normalize(newN * 2.0 - 1.0);
                 float normalFilter = smoothstep(0.6, 0.95, dot(newN, -R));
-                mask = normalFilter * viewFilter;// * frensnel;
+                mask = normalFilter;// * viewFilter;// * frensnel;
                 vec3 reflections = texture(renderedTexture, search.xy).rgb;
                 reflectionmask = vec3(mask * (reflections.r + reflections.g + reflections.b / 3.0));
                 FragColor = vec4(mix(reflections, vec3(sceneColor), mask * (-roughness + 1)), 1.0);// WHEN REPAIRING ADD: (reflections.r + reflections.g + reflections.b) / 3) *
