@@ -1,7 +1,7 @@
 # Highlander
 Highlander is a hobby game engine I have been working on for about 6 months. Currently it is purely for fun!
 
-It currently works only on debian based linux distros with the ASSIMP library installed. You can install it with the following commands:
+If you are on debian, it won't work without assimp. You can install it with the following commands:
 
 sudo apt update
 sudo apt install libassimp5
