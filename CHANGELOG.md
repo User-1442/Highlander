@@ -1,3 +1,9 @@
+v Alpha 1.2.3_P1
+=============
+- Fixed a bug where it wouldn't let you add textures occasionally
+- Fixed a bug where it wouldn't show objects occasionally
+- Fixed a bug where it wouldn't load projects occasionally
+
 v Alpha 1.2.3
 =============
 - Added vsync support
