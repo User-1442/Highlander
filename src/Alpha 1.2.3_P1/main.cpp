@@ -48,8 +48,9 @@ int main() {
     Camera cam(Window.GetWindow());
     InitUniforms();
     gui.Init(Window.GetWindow(), "#version 420");
-    if (lodproj == true && starteditor == true) {
-        LoadProject(projectname.c_str(), filenames);
+    if (lodproj == true) {
+        std::cout << "Loading: " << outprojectname << "\n" << std::endl;
+        LoadProject(outprojectname.c_str(), filenames);
     }
     if (changesettings == true) {
         Applysettings();

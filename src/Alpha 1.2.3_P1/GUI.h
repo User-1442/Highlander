@@ -15,7 +15,7 @@ extern int winwidth;
 extern int winheight;
 extern int graphicsquality;
 
-extern std::string projectname;
+extern std::string outprojectname;
 extern std::vector<std::string> filenames;
 
 class GUI

@@ -46,6 +46,7 @@ char objname[256];
 unsigned int guiloopnumber = 0;
 
 std::string projectname;
+std::string outprojectname;
 std::string deletefile;
 
 std::vector<std::string> filenames;
@@ -106,10 +107,9 @@ void GUI::earlyUpdate() {
                 projectname = available_projects[i];
                 projectname.erase(projectname.begin(), projectname.begin() + 2);
                 if (ImGui::Button(projectname.c_str())) {
-                    filenames.clear();
-                    Objects.clear();
                     lodproj = true;
                     starteditor = true;
+                    outprojectname = projectname;
                 }
                 ImGui::SameLine();
                 std::string currentbuttonid = "Delete##" + std::to_string(i);
@@ -293,7 +293,7 @@ void GUI::Update(GLFWwindow* window) {
                         if (ImGui::Button(projectname.c_str())) {
                             filenames.clear();
                             Objects.clear();
-                            LoadProject(projectname, filenames);
+                            LoadProject(projectname.c_str(), filenames);
                         }
                     }
                     ImGui::EndMenu();
@@ -474,8 +474,8 @@ void GUI::Update(GLFWwindow* window) {
                 if (objectselected == true) {
                     std::string objectname;
 
-                    glm::vec3 color;
-                    glm::vec3 ogcolor;
+                    glm::vec3 color = glm::vec3(1.0f);
+                    glm::vec3 ogcolor = glm::vec3(1.0f);
                     glm::vec3 rotation = glm::vec3(0.0f);
                     glm::vec3 originalrotation = glm::vec3(0.0f);
                     glm::vec3 scale = glm::vec3(1.0f);

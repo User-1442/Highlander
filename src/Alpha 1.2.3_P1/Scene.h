@@ -4,6 +4,8 @@
 #include <string>
 
 struct Object {
+    std::string objtype;
+
     std::string name;
 
     bool selected = false;
