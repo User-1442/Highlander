@@ -9,6 +9,7 @@ v Alpha 1.3
 - Added Player Collision settings (WIP)
 - Moved statistics menu into the settings manager
 - Updated save system to add support for collision
+- Improved Speed with various optimization techniques
 
 v Alpha 1.2.3_P1
 =============
