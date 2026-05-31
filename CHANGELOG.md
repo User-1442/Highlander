@@ -1,3 +1,15 @@
+v Alpha 1.3
+=============
+- Added Collision Support
+- Added Playtesting
+- Added more statistics in the settings menu
+- Added Game settings menu
+- Added coordinates viewing
+- Added Camera Speed settings
+- Added Player Collision settings (WIP)
+- Moved statistics menu into the settings manager
+- Updated save system to add support for collision
+
 v Alpha 1.2.3_P1
 =============
 - Fixed a bug where it wouldn't let you add textures occasionally
