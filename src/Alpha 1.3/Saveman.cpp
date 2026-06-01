@@ -271,6 +271,7 @@ int LoadProject(
     }
     if (nocoldef == true && success == true) {
         std::cout << "Calculating Collision Bounding Box\n";
+        Modelparser();
         for (int i = 0; i < Objects.size(); i++) {
             AABB(Objects[i]);
         }

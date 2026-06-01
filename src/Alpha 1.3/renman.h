@@ -13,6 +13,7 @@ void Loadmodel(GLuint width, GLuint height, Camera& cam);
 void UpdateBuffers(Object& obj);
 void CreateObjectWithOBJ(Object& obj);
 void Applysettings();
+void Modelparser();
 
 void calculategaussian(float blurstrength, int minx);
 

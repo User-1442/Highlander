@@ -37,6 +37,9 @@ void playercolcalc() {
 }
 
 void AABB(Object& obj) {
+    if (Models.size() == 0) {
+        Modelparser();
+    }
     glm::vec3 prevmincoords = obj.vertices[0];
     glm::vec3 prevmaxcoords = obj.vertices[0];
     for (int i = 0; i < obj.vertices.size(); i++) {
