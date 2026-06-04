@@ -1,3 +1,8 @@
+v Alpha 1.3_P1
+=============
+- Fixed a bug where if you save to the same project twice it breaks
+- Fixed a bug where you can't rename objects
+
 v Alpha 1.3
 =============
 - Added Collision Support
