@@ -1,3 +1,11 @@
+v Alpha 1.4
+=============
+- Added File Browsing Support instead of typing in paths
+- Added New Material Handling System
+- Updated TBSS to support saves from Alpha 1.3 so you can still play old games
+- Added Material Assignment Reusing images in memory for performance
+- Fixed other minor bugs
+
 v Alpha 1.3_P1
 =============
 - Fixed a bug where if you save to the same project twice it breaks
