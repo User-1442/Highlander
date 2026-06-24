@@ -49,6 +49,7 @@ v Alpha 1.2.1
 =============
 - Added blur pass to renderer
 - Added Windows support
+- Is Apparently lost media since I can't find it on my drive
 
 v Alpha 1.2
 =============
