@@ -1,3 +1,12 @@
+v Alpha 1.4_P1
+=============
+- Added a warning safeguard for loading objects without any materials in the project
+- Fixed a bug where you couldn't load an object in a new/empty project
+- Fixed a bug where it would segfault if you clicked on an object with no materials
+- Fixed a bug where material names weren't visible
+- Removed old object adding system where you had to type in the full path
+- Made it so you can close the material editor
+
 v Alpha 1.4
 =============
 - Added File Browsing Support instead of typing in paths
