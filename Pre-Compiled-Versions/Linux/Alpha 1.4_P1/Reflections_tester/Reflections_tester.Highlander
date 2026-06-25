@@ -1,0 +1,66 @@
+Highlander
+-Obj Highlander.obj
+-Oname the_thing
+-Ocol 1.000000 1.000000 1.000000
+-Odif laminate_floor_02_diff_4k.png
+-Onor laminate_floor_02_nor_gl_4k.png
+-Oarm laminate_floor_02_arm_4k.png
+-Oloc 0.000000 0.000000 0.000000
+-Orot 0.000000 0.000000 0.000000
+-Osca 1.000000 1.000000 1.000000
+-Ocolmin -2.565884 -0.494012 -0.494012
+-Ocolmax 2.441615 1.588794 0.494012
+-Ocolen 1
+-Obj Highlander_lighting.obj
+-Oname the_2nd_thing
+-Ocol 1.000000 1.000000 1.000000
+-Odif laminate_floor_02_diff_4k.png
+-Onor laminate_floor_02_nor_gl_4k.png
+-Oarm laminate_floor_02_arm_4k.png
+-Oloc 0.000000 0.000000 0.000000
+-Orot 0.000000 0.000000 0.000000
+-Osca 1.000000 1.000000 1.000000
+-Ocolmin -9.179793 0.000000 -9.179793
+-Ocolmax 9.179793 0.000000 9.179793
+-Ocolen 1
+-Obj Highlander.obj
+-Oname the_thing
+-Ocol 1.000000 1.000000 1.000000
+-Odif laminate_floor_02_diff_4k.png
+-Onor laminate_floor_02_nor_gl_4k.png
+-Oarm laminate_floor_02_arm_4k.png
+-Oloc 0.000000 0.000000 0.000000
+-Orot 0.000000 0.000000 0.000000
+-Osca 1.000000 1.000000 1.000000
+-Obj Highlander.obj
+-Oname the_thing
+-Ocol 1.000000 1.000000 1.000000
+-Odif laminate_floor_02_diff_4k.png
+-Onor laminate_floor_02_nor_gl_4k.png
+-Oarm laminate_floor_02_arm_4k.png
+-Oloc 0.000000 0.000000 0.000000
+-Orot 0.000000 0.000000 0.000000
+-Osca 1.000000 1.000000 1.000000
+-Ocolmin -2.565884 -0.494012 -0.494012
+-Ocolmax 2.441615 1.588794 0.494012
+-Ocolen 1
+-Obj Highlander.obj
+-Oname the_thing
+-Ocol 1.000000 1.000000 1.000000
+-Odif laminate_floor_02_diff_4k.png
+-Onor laminate_floor_02_nor_gl_4k.png
+-Oarm laminate_floor_02_arm_4k.png
+-Oloc 0.000000 0.000000 0.000000
+-Orot 0.000000 0.000000 0.000000
+-Osca 1.000000 1.000000 1.000000
+-Ocolmin -2.565884 -0.494012 -0.494012
+-Ocolmax 2.441615 1.588794 0.494012
+-Ocolen 1
+-OLE
+-PLight
+-Plnam Light0
+-Plbri 31.746000
+-Plcol 1.000000 1.000000 1.000000
+-Plloc 0.000000 2.300000 4.000000
+-Campos 0.744349 1.696229 3.451016
+-EOF

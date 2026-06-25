@@ -1,0 +1,27 @@
+Highlander
+-Obj demo_floor.obj
+-Oname floor
+-Ocol 0.540081 1.000000 0.460784
+-Odif forrest_ground_01_diff_1k.png
+-Onor forrest_ground_01_nor_gl_1k.png
+-Oarm forrest_ground_01_arm_1k.png
+-Oloc 0.000000 0.000000 0.000000
+-Orot 0.000000 0.000000 0.000000
+-Osca 1.000000 1.000000 1.000000
+-OLE
+-PLight
+-Plnam Light0
+-Plbri 31.087999
+-Plcol 1.000000 0.961073 0.735294
+-Plloc 0.000000 5.400000 0.000000
+-PLight
+-Plnam Light1
+-Plbri 7.254000
+-Plcol 1.000000 1.000000 1.000000
+-Plloc 0.000000 4.900000 7.500000
+-PLight
+-Plnam Light2
+-Plbri 11.399000
+-Plcol 1.000000 1.000000 0.774510
+-Plloc 0.000000 6.200000 -10.100000
+-EOF

@@ -1,0 +1,18 @@
+Highlander
+-Obj collision.obj
+-Oname Object0
+-Ocol 1.000000 1.000000 1.000000
+-Odif forrest_ground_01_diff_1k.png
+-Onor forrest_ground_01_nor_gl_1k.png
+-Oarm forrest_ground_01_arm_1k.png
+-Oloc 0.000000 0.000000 0.000000
+-Orot 0.000000 0.000000 0.000000
+-Osca 1.000000 1.000000 1.000000
+-OLE
+-PLight
+-Plnam Light0
+-Plbri 24.871078
+-Plcol 1.000000 1.000000 1.000000
+-Plloc 0.000000 3.900000 0.000000
+-Campos -2.845598 9.035028 3.314142
+-EOF

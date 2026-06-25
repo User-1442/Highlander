@@ -1,0 +1,62 @@
+Highlander
+-Obj collision.obj
+-Oname Beginning
+-Ocol 1.000000 1.000000 1.000000
+-Odif forrest_ground_01_diff_1k.png
+-Onor forrest_ground_01_nor_gl_1k.png
+-Oarm forrest_ground_01_arm_1k.png
+-Oloc 0.000000 0.000000 0.000000
+-Orot 0.000000 0.000000 0.000000
+-Osca 1.000000 1.000000 1.000000
+-Ocolmin -8.396753 -0.566269 -7.587308
+-Ocolmax 8.396753 0.566269 7.587308
+-Ocolen 1
+-Obj collision.obj
+-Oname Jump1
+-Ocol 1.000000 1.000000 1.000000
+-Odif forrest_ground_01_diff_1k.png
+-Onor forrest_ground_01_nor_gl_1k.png
+-Oarm forrest_ground_01_arm_1k.png
+-Oloc 0.000000 0.000000 12.300000
+-Orot 0.000000 0.000000 0.000000
+-Osca 0.200000 1.000000 0.500000
+-Ocolmin -8.396753 -0.566269 -7.587308
+-Ocolmax 8.396753 0.566269 7.587308
+-Ocolen 1
+-Obj collision.obj
+-Oname Jump2
+-Ocol 1.000000 1.000000 1.000000
+-Odif forrest_ground_01_diff_1k.png
+-Onor forrest_ground_01_nor_gl_1k.png
+-Oarm forrest_ground_01_arm_1k.png
+-Oloc 0.000000 0.000000 21.100000
+-Orot 0.000000 0.000000 0.000000
+-Osca 0.200000 1.000000 0.500000
+-Ocolmin -8.396753 -0.566269 -7.587308
+-Ocolmax 8.396753 0.566269 7.587308
+-Ocolen 1
+-Obj collision.obj
+-Oname End
+-Ocol 1.000000 1.000000 1.000000
+-Odif forrest_ground_01_diff_1k.png
+-Onor forrest_ground_01_nor_gl_1k.png
+-Oarm forrest_ground_01_arm_1k.png
+-Oloc 0.000000 0.000000 34.700001
+-Orot 0.000000 0.000000 0.000000
+-Osca 1.000000 1.000000 1.000000
+-Ocolmin -8.396753 -0.566269 -7.587308
+-Ocolmax 8.396753 0.566269 7.587308
+-Ocolen 1
+-OLE
+-PLight
+-Plnam Light0
+-Plbri 24.871078
+-Plcol 1.000000 1.000000 1.000000
+-Plloc 0.000000 3.900000 0.000000
+-PLight
+-Plnam Light1
+-Plbri 15.909000
+-Plcol 0.647636 1.000000 0.539216
+-Plloc -0.000000 2.100000 32.799999
+-Campos -11.002848 15.749761 12.685278
+-EOF

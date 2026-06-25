@@ -555,54 +555,6 @@ void GUI::Update(GLFWwindow* window, Camera& cam) {
                 ImGui::InputText("Add New Obj", objfile, 256);
                 const char* combo_id = "AddCombo";
                 static const char* preview = "Add";
-                if (ImGui::BeginCombo("Add New...", "Select Item type"))
-                {
-                    if (ImGui::BeginCombo("Object", "Object")) {
-                        if (ImGui::Button("Add OBJ")) {
-                            positions.clear();
-                            indices.clear();
-                            uvs.clear();
-                            normals.clear();
-                            tangents.clear();
-
-                            Hmodel.name = "Object" + std::to_string(Objects.size());
-
-                            std::cout << "loading object vertices with objload" << std::endl;
-                            Hmodel.vertexCount = objload(objfile, positions, indices, uvs, normals, tangents);
-                            Hmodel.vertices = positions;
-                            Hmodel.indices = indices;
-                            Hmodel.objtangents = tangents;
-                            Hmodel.uvs = uvs;
-                            Hmodel.normals = normals;
-                            Hmodel.color = objectcolor;
-                            Hmodel.id = Objects.size();
-
-                            filenames.push_back(std::string(objfile));
-
-                            std::cout << "Loading Object with OBJ" << std::endl;
-                            CreateObjectWithOBJ(Hmodel);
-                            std::cout << "Finished Object Loading With OBJ\n" << std::endl;
-
-                            Objects.push_back(Hmodel);
-
-                            UpdateBuffers(Objects.back());
-                            AABB(Hmodel);
-                            std::cout << "Successfull! :D" << std::endl;
-                        }
-                        ImGui::EndCombo();
-                    }
-                    if (ImGui::BeginCombo("Light", "Light"))
-                    {
-                        if (ImGui::Button("Add Point Light")) {
-                            Light newlight;
-                            newlight.name = "Light" + std::to_string(SceneLights.size());
-                            SceneLights.push_back(newlight);
-                        }
-                        ImGui::EndCombo();
-                    }
-                    ImGui::EndCombo();
-                }
-                ImGui::Separator();
                 ImGui::Text("Object Properties");
                 for (int i = Objects.size() - 1; i > -1; i--) {
                     Object& obj = Objects[i];
